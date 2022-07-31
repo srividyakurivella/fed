@@ -1,0 +1,83 @@
+<html>
+<head>
+<title>
+Dine Booking
+</title>
+<script>
+function validate(){  
+var c=document.getElementById('numb').value.length;
+     if(c==2){
+        return true;
+}
+else{
+    window.alert("Number of members cant exceed 2 digit number");
+    return false;
+}
+}  
+</script>
+</head>
+<body>
+<center>
+<form>
+<fieldset>
+<table>
+<tr>
+Dine Booking
+
+</tr>
+<tr>
+<td>Visitor Name:</td>
+<td><input type='text' maxlength="20" name='vname' id='vname'  required autofocus></td>
+</tr>
+<tr>
+<td>Number of Members:</td>
+<td><input type="text" id="numb" maxlength="2" required></td>
+</tr>
+<tr>
+<td>Contact No:</td>
+<td><input type="tel" id="con" required></td>
+</tr>
+<tr>
+<td>Email:</td>
+<td><input type="email" id="mail" required></td>
+</tr>
+<tr>
+<td>Type of Food:</td>
+<td><input type="checkbox" id="si" name="food" checked>South Indian
+<input type="checkbox" id="ni" name="food1">North Indian
+<input type="checkbox" id="c" name="food2">Chineese
+<input type="checkbox" id="w" name="food3">Western
+</td>
+</tr>
+<tr>
+<td>Room Status:</td>
+<td><input type="radio" id="ac" name="status" checked>AC
+<input type="radio" id="nac" name="status">Non-AC
+</td>
+</tr>
+<tr>
+<td>Venue Preference:</td>
+<td>
+<select name="venue" id="venue">
+ <option value="--SELECT--">--SELECT--</option>
+  <option value="Arena">Arena</option>
+  <option value="Fiesta">Fiesta</option>
+  <option value="Vista">Vista</option>
+  <option value="Mythri">Mythri</option>
+ <option value="Magna">Magna</option>
+  <option value="Oasis">Oasis</option>
+<option value="Amoeba" disabled>Amoeba</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><input type="submit" value="Book" onclick='return validate()'></td>
+<td><input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+</fieldset>
+</form>
+</center>
+</body>
+</html>

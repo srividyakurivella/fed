@@ -1,0 +1,34 @@
+<html>
+<body>
+<fieldset>
+   <center><h2>Dine Booking</h2></center>
+   <form  >
+       <center>
+       Visitor name:<input type='text' maxlength="20" name='vname' id='vname'  required autofocus><br><br>
+       Number of members:<input type='number' max="99" name='num' id='num' required><br><br>
+        Contact Number:<input type='tel' pattern="[0-9]{10}" name='cnum' id='cnum' required><br><br>
+        Email:<input type=email name=mail id=mail required><br><br>
+        Type of Food:  <input type="checkbox" id="f1" name="f1" value="f1" checked>South Indian
+  <input type="checkbox" id="f2" name="f2" value="f2">North Indian
+  <input type="checkbox" id="f3" name="f3" value="f3">Chinese
+  <input type="checkbox" id="f4" name="f4" value="f4">Western
+        <br><br>
+        Room Status:<input type="radio" id="ac" name="ac" value="ac" checked required/> Ac
+<input type="radio" id="nac" name="ac" value="nac"/> Non ac <br/>  
+Venue Preference:<select name="v" id="v">
+    <option value="SELECT" selected>---SELECT---</option>
+  <option value="Arena">Arena</option>
+  <option value="Fiesta">Fiesta</option>
+  <option value="Vista">Vista</option>
+  <option value="Mythri">Mythri</option>
+  <option value="Magna">Magna</option>
+  <option value="Oasis">Oasis</option>
+  <option value="Amoeba" disabled>Amoeba</option>
+</select><br><br>
+<input type=submit value=BOOK >
+<input type=reset value=RESET>
+       </center>
+   </form>
+</fieldset>
+</body>
+</html>
